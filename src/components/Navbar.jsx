@@ -15,7 +15,7 @@ const Navbar = () => {
             <a href="https://github.com/gautambhattcse" target="_blank">
               <img
                 className="invert p-1  w-10"
-                src="src/assets/github-mark.png"
+                src="/github-mark.png"
                 alt="github-mark"
               />
             </a>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <a href="https://www.linkedin.com/in/gautam-bhatt/" target="_blank">
               <img
                 className=" p-1  w-10"
-                src="src/assets/LinkedIn.png"
+                src="/LinkedIn.png"
                 alt="linkedin-mark"
               />
             </a>
