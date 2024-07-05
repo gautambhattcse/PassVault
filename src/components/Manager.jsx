@@ -33,10 +33,10 @@ const Manager = () => {
   const showPassword = () => {
     if (ref.current.src.includes("/hidden.png")) {
       ref.current.src = "/eye.png";
-      passwordRef.current.type = "text";
+      passwordRef.current.type = "password";
     } else {
       ref.current.src = "/hidden.png";
-      passwordRef.current.type = "password";
+      passwordRef.current.type = "text";
     }
   };
 
