@@ -31,11 +31,11 @@ const Manager = () => {
   };
 
   const showPassword = () => {
-    if (ref.current.src.includes("src/assets/hidden.png")) {
-      ref.current.src = "src/assets/eye.png";
+    if (ref.current.src.includes("/hidden.png")) {
+      ref.current.src = "/eye.png";
       passwordRef.current.type = "text";
     } else {
-      ref.current.src = "src/assets/hidden.png";
+      ref.current.src = "/hidden.png";
       passwordRef.current.type = "password";
     }
   };
@@ -49,7 +49,7 @@ const Manager = () => {
       setPasswordArray([...passwordArray, { ...form, id: uuidv4() }]);
       localStorage.setItem(
         "passwords",
-        JSON.stringify([...passwordArray, { ...form, id: uuidv4() }])
+        JSON.stringify([...passwordArray, { ...form, id: uuidv4() }]),
       );
       console.log([...passwordArray, form]);
       setform({ site: "", username: "", password: "" });
@@ -90,7 +90,7 @@ const Manager = () => {
       setPasswordArray(passwordArray.filter((item) => item.id !== id));
       localStorage.setItem(
         "passwords",
-        JSON.stringify(passwordArray.filter((item) => item.id !== id))
+        JSON.stringify(passwordArray.filter((item) => item.id !== id)),
       );
       toast.success("Deleted!", {
         position: "top-left",
@@ -228,7 +228,7 @@ const Manager = () => {
                           }}
                         >
                           <img
-                            src="src/assets/copy-icon.png"
+                            src="/copy-icon.png"
                             alt="copy-icon"
                             style={{
                               width: "16px",
@@ -249,7 +249,7 @@ const Manager = () => {
                           }}
                         >
                           <img
-                            src="src/assets/copy-icon.png"
+                            src="/copy-icon.png"
                             alt="copy-icon"
                             style={{
                               width: "16px",
@@ -270,7 +270,7 @@ const Manager = () => {
                           }}
                         >
                           <img
-                            src="src/assets/copy-icon.png"
+                            src="/copy-icon.png"
                             alt="copy-icon"
                             style={{
                               width: "16px",
